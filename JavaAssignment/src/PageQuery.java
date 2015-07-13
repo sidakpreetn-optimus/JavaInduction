@@ -51,9 +51,9 @@ public class PageQuery
 			pageQueryStrength.put((i+1)+"", calculateStrength(singleQuery, allPages.get(i), 8));
 		}
 		List<Entry<String,Integer>> sortedDescEntries=entriesSortedByValues(pageQueryStrength);
-		for (int i=0;i<sortedDescEntries.size()-1;i++)
+		for (int i=0;i<sortedDescEntries.size();i++)
 		{
-			if(sortedDescEntries.get(i).getValue()==0)
+			if(sortedDescEntries.get(i).getValue()==0||i>5)
 				break;
 			order=order+" P"+sortedDescEntries.get(i).getKey();
 		}
