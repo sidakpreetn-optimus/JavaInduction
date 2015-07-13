@@ -78,13 +78,13 @@ public class PageQuery
 		return strength;
 	}
 	/*Function for sorting a Hashmap by Values in descending order*/
-	static <K,V extends Comparable<? super V>> List<Entry<K, V>> entriesSortedByValues(Map<K,V> map)
+	static List<Entry<String,Integer>> entriesSortedByValues(Map<String,Integer> map)
 	{
-		List<Entry<K,V>> sortedEntries = new ArrayList<Entry<K,V>>(map.entrySet());
+		List<Entry<String,Integer>> sortedEntries = new ArrayList<Entry<String,Integer>>(map.entrySet());
 
-		Collections.sort(sortedEntries, new Comparator<Entry<K,V>>()
+		Collections.sort(sortedEntries, new Comparator<Entry<String,Integer>>()
 		{
-        	public int compare(Entry<K,V> e1, Entry<K,V> e2)
+        	public int compare(Entry<String,Integer> e1, Entry<String,Integer> e2)
         	{
             	return e2.getValue().compareTo(e1.getValue());
         	}
