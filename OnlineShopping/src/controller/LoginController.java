@@ -50,7 +50,7 @@ public class LoginController extends HttpServlet {
 	}
 
 	/**
-	 * Method that logout's the user and navigates to the login screen.
+	 * Method that logout the user and navigates to the login screen.
 	 * 
 	 * @param req
 	 * @param resp
