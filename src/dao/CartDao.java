@@ -44,8 +44,8 @@ public class CartDao {
 				Product product = productDao.getProductById(productId);
 				product.setQuantity(String.valueOf(quantity));
 				products.add(product);
-				connection.close();
 			}
+			connection.close();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
