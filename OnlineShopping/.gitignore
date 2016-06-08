@@ -1,3 +1,6 @@
-build
-*.class
-.project
+/OnlineShopping/build
+
+/OnlineShopping/*.class
+
+/OnlineShopping/.project
+/OnlineShopping/*.classpath
